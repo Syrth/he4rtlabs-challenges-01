@@ -1,15 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Freela - He4rtDevs</title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <img class="brand" src="./assets/logo.png" alt="He4rtDevs">
+    </header>
+    <main class="site-content">
+      <form method="post">
+        <fieldset class="group">
+          <legend>Calculadora</legend>
+          <label for="total">Valor total do projeto</label>
+          <input type="number" step="0.01" name="total" id="total" required>
+          <label for="hours">Tempo diário investido no projeto</label>
+          <input type="number" step="0.01" name="hours" id="hours" required>
+          <label for="days">Dias efetivos trabalhando no projeto</label>
+          <input type="number" step="0.01" name="days" id="days" required>
+          <label for="holidays">Dias de férias trabalhando pelo projeto</label>
+          <input type="number" step="0.01" name="holidays" id="holidays" required>
+          <input type="submit" value="Calcular">
+        </fieldset>
+      </form>
+      <div class="result"></div>
+    </main>
+    <aside class="site-sidebar">
+      <h2 class="title">Tempo diário investido no projeto</h2>
+      <p class="description">
+        Quando tratamos de freelances, há uma certa demanda do seu tempo em
+        off. Ou seja: depois do trabalho, escola ou aquele tempinho vago no
+        final do dia que você usa pra relaxar e descontrair. Esse tempo é algo
+        muito valioso para qualquer pessoa, certo? Então claramente temos que
+        levar esse fator em consideração.
+      </p>
+      <h2 class="title">Dias efetivos trabalhando</h2>
+      <p class="description">
+        Outro fator é a quantidade de dias efetivos que você irá
+        disponibilizar para trabalhar no projeto. Não há nenhuma garantia que
+        você poderá trabalhar todos os dias e de fato lidar com o processo de
+        confirmar tudo com o cliente. Logo, você terá que cotar uma quantidade
+        de dias específicos para lidar com todo o processo, sendo ele a parte
+        comercial e desenvolvimento.
+      </p>
+      <h2 class="title">Dias de férias por projeto</h2>
+      <p class="description">
+        Qualquer modalidade de trabalho, seja CLT ou PJ, há seus encargos
+        referentes à verba de férias e não seria diferente para lidar com um
+        freela. Uma parte do valor da sua hora reflete diretamente na
+        quantidade de dias que você deseja tirar "férias" com o valor total
+        projeto.
+      </p>
+      <h2 class="title">Valor total do projeto</h2>
+      <p class="description">
+        Não podemos esquecer do principal fator que é o total a ser recebido
+        pelo freela. A partir desse valor, do quanto você desejaria ganhar em
+        cima do trabalho, é feito o cálculo maior.
+      </p>
+    </aside>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
 </html>
