@@ -32,7 +32,8 @@ body {
 
 .container {
   display: grid;
-  max-width: clamp(90%, 100% - 2rem, 71.25rem);
+  width: calc(100% - 2rem);
+  max-width: 62.5rem;
   background-color: rgb(252, 253, 254);
   box-shadow: 0 0.2rem 1rem rgba(131, 78, 165, 0.8);
   border-radius: 1rem;
